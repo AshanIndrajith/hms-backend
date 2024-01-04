@@ -40,7 +40,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Pull Image from docker hub
-        run: docker pull ashan99/springboot:latest
+        run: docker pull ashan99/springboot
       - name: Delete old container
         run: docker rm -f springboot-example-container
       - name: Run docker container
